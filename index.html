@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Evan Di Placido</title>
+<meta name="description" content="Software developer in Saskatoon. I built Argo Books, which won the Grand Prize in the 2026 Avalonia Port Challenge, plus two games, a robot arm and 32 merged pull requests to Avalonia UI.">
+<meta property="og:title" content="Evan Di Placido">
+<meta property="og:description" content="Software developer in Saskatoon. Argo Books won the Grand Prize in the 2026 Avalonia Port Challenge.">
+<meta property="og:image" content="img/avalonia.webp">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2316202B'/%3E%3Ctext x='32' y='44' font-family='Arial' font-weight='700' font-size='30' text-anchor='middle' fill='%23E8EEF2'%3EED%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="top__name" href="#">Evan Di Placido</a>
+  <nav class="top__links" aria-label="Contact">
+    <a href="media/Evan_DiPlacido_Resume.pdf">Resume</a>
+    <a href="https://github.com/Evan260">GitHub</a>
+    <a href="https://www.linkedin.com/in/evan-di-placido-502a87362/">LinkedIn</a>
+    <a href="mailto:evandiplacido0348@gmail.com">Email</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="hero__text">
+    <h1>I build software people pay for, games you can pet the dog in, and once, a robot arm.</h1>
+    <p class="lede">I'm a developer in Saskatoon. I finished SAIT's Software Development diploma in December 2025, and I've been writing code for about eight years, mostly by building whole things and putting them in front of real people.</p>
+    <p class="lede">I'm looking for a team to build with. Remote, or in Saskatoon.</p>
+    <p class="hero__actions">
+      <a class="btn" href="mailto:evandiplacido0348@gmail.com">Email me</a>
+      <a class="btn btn--quiet" href="media/Evan_DiPlacido_Resume.pdf">Read my resume</a>
+    </p>
+  </div>
+  <figure class="hero__photo">
+    <img src="img/evan.jpg" alt="Evan Di Placido, smiling, in a park on a sunny day" width="675" height="900">
+  </figure>
+</section>
+
+<section class="prize" aria-labelledby="prize-title">
+  <div class="prize__inner">
+    <div class="prize__head">
+      <svg class="medal" viewBox="0 0 64 80" aria-hidden="true">
+        <path d="M18 0h12l6 22-12 6zM46 0H34l-6 22 12 6z" fill="#8FA3B5"/>
+        <circle cx="32" cy="50" r="26" fill="#C9961A"/>
+        <circle cx="32" cy="50" r="19" fill="none" stroke="#F4D778" stroke-width="2"/>
+        <text x="32" y="58" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="22" fill="#16202B">1</text>
+      </svg>
+      <div>
+        <p class="prize__kicker">13 November 2026</p>
+        <h2 id="prize-title">Argo Books won the Grand Prize in the 2026 Avalonia Port Challenge.</h2>
+      </div>
+    </div>
+
+    <p class="prize__copy">Argo Books is accounting software for small businesses that I wrote on my own. It started as a 91,089-line Windows-only WinForms app. Over nine months I rewrote it in Avalonia and .NET 10, so one codebase now ships signed and notarised builds for Windows, macOS and Linux. The AvaloniaUI core team and Devolutions judged every entry and gave it the top prize of US$5,000, and they pointed to two things: it's a real business application with paying customers, and the technical write-up was excellent.</p>
+
+    <div class="compare" data-compare>
+      <img src="img/avalonia.webp" alt="Argo Books after the rewrite, running on Avalonia" width="1600" height="1018">
+      <div class="compare__before">
+        <img src="img/winforms.webp" alt="Argo Books before the rewrite, running on WinForms" width="1600" height="1018">
+      </div>
+      <span class="compare__tag compare__tag--left">WinForms, before</span>
+      <span class="compare__tag compare__tag--right">Avalonia, after</span>
+      <div class="compare__handle" aria-hidden="true"><span></span></div>
+      <input class="compare__range" type="range" min="0" max="100" value="50" aria-label="Drag to compare the WinForms version with the Avalonia version">
+    </div>
+    <p class="compare__hint">Drag across the screenshot to compare the old app with the new one.</p>
+
+    <p class="prize__links">
+      <a href="https://argorobots.com/winforms-to-avalonia">Read my write-up of the port</a>
+      <a href="https://avaloniaui.net/blog/avalonia-port-challenge-winners">See the winners announcement</a>
+    </p>
+  </div>
+</section>
+
+<section class="work" aria-labelledby="work-title">
+  <h2 id="work-title" class="section-title">Things I've built</h2>
+
+  <article class="project">
+    <div class="project__text">
+      <h3>Argo Books</h3>
+      <p class="project__meta">Accounting software for small businesses. C#, Avalonia, PHP, MySQL.</p>
+      <p>Invoices, expenses, inventory, payroll and reports in a desktop app that works offline and keeps each business's data encrypted on its own computer. It reads receipts with AI, so nobody has to type them in.</p>
+      <p>I also built the website that sells it: accounts, licence keys, payments through Stripe, PayPal and Square, a portal where my users' own customers pay their invoices, and a community forum. Underneath sit an 82-table MySQL schema, 275 test classes for the app and a PHPUnit suite for the site, all deployed through GitHub Actions.</p>
+      <p>When a user emailed about a problem, I reproduced it, shipped the fix and wrote back myself.</p>
+      <p class="project__link"><a href="https://argorobots.com">argorobots.com</a></p>
+    </div>
+    <figure class="project__media project__media--shot">
+      <img src="img/argo-dashboard.webp" alt="The Argo Books dashboard showing revenue, expenses and recent transactions" width="1600" height="1019" loading="lazy">
+    </figure>
+  </article>
+
+  <article class="project project--flip">
+    <div class="project__text">
+      <h3>Two games in Godot</h3>
+      <p class="project__meta">Farmus Maximus and Mosaicus Maximus. Godot 4, GDScript.</p>
+      <p><strong>Farmus Maximus</strong> is a cozy Roman farming game that can sit on your desktop while you work. You rebuild a ruined estate, hire staff, and yes, you can pet the dog. It runs in 14 languages and builds for Windows, macOS and Linux.</p>
+      <p><strong>Mosaicus Maximus</strong> is a Roman mosaic workshop. Clients bring you a job, you design the floor, then lay it stone by stone, grout it and polish it.</p>
+      <p>I came up with both games, directed the design, tested every build, and chose the music and sound. Claude Code wrote most of the GDScript, and I built bots that play each game from start to finish to check its pacing and that it can be finished.</p>
+    </div>
+    <div class="project__media project__media--games">
+      <figure class="phone">
+        <video src="media/farmus.mp4" poster="img/farmus-poster.jpg" muted loop playsinline preload="none" data-autoplay aria-label="Farmus Maximus, day 1 compared with day 120"></video>
+        <figcaption>Farmus Maximus, day 1 against day 120</figcaption>
+      </figure>
+      <figure class="phone">
+        <video src="media/mosaicus.mp4" poster="img/mosaicus-poster.jpg" muted loop playsinline preload="none" data-autoplay aria-label="Mosaicus Maximus, the first floor compared with the last"></video>
+        <figcaption>Mosaicus Maximus, the first floor against the last</figcaption>
+      </figure>
+    </div>
+  </article>
+
+  <div class="gallery gallery--games">
+    <img src="img/farmus-estate.jpg" alt="Farmus Maximus: a Roman farm estate at golden hour" width="1600" height="900" loading="lazy">
+    <img src="img/farmus-night.jpg" alt="Farmus Maximus: the farmhouse under the northern lights" width="1600" height="900" loading="lazy">
+    <img src="img/mosaicus-workshop.jpg" alt="Mosaicus Maximus: the mosaic workshop" width="1600" height="900" loading="lazy">
+  </div>
+
+  <article class="project">
+    <div class="project__text">
+      <h3>A six-axis robot arm</h3>
+      <p class="project__meta">CAD, 3D printing, Arduino, C#. 2023 to 2024.</p>
+      <p>I designed it in CAD, printed every part, and wired it on my desk. The joints use cycloidal drives I designed and printed myself.</p>
+      <p>The Arduino firmware handles motor control and inverse kinematics, and a C# app on the computer lets you program a sequence of moves by pointing and clicking.</p>
+    </div>
+    <div class="project__media project__media--arm">
+      <figure class="arm arm--tall"><img src="img/arm-built.jpg" alt="The finished robot arm standing on a desk" width="1100" height="1466" loading="lazy"></figure>
+      <figure class="arm"><img src="img/arm-render.jpg" alt="A CAD render of the arm on its control box" width="1400" height="788" loading="lazy"></figure>
+      <figure class="arm"><img src="img/arm-drive-hand.jpg" alt="A 3D-printed cycloidal drive held in one hand" width="1100" height="825" loading="lazy"></figure>
+      <figure class="arm"><img src="img/arm-drives.jpg" alt="A row of printed cycloidal drives and servo grippers" width="1200" height="900" loading="lazy"></figure>
+      <figure class="arm"><img src="img/arm-wiring.jpg" alt="The arm's motor drivers and wiring spread across a desk" width="1200" height="900" loading="lazy"></figure>
+    </div>
+  </article>
+
+  <article class="project project--plain">
+    <div class="project__text">
+      <h3>Survey plans to JSON, for a client</h3>
+      <p class="project__meta">Contract work, October 2026. Java 17.</p>
+      <p>A client checks whether the lots on land survey plans close properly. I built a Java pipeline that turns the plan PDFs into JSON for their checker. Each document goes to an inexpensive AI model first, and only the parcels that fail its checks get sent on to costlier ones, so the bill tracks how hard the documents actually are.</p>
+    </div>
+  </article>
+</section>
+
+<section class="oss" aria-labelledby="oss-title">
+  <div class="oss__head">
+    <h2 id="oss-title" class="section-title">32 pull requests merged into Avalonia UI</h2>
+    <p>Avalonia is the .NET UI framework I rebuilt Argo Books on. When I hit a bug in it, I fixed it upstream. Most of my fixes are about the details that decide whether a control feels right: keyboard, focus and input.</p>
+  </div>
+  <ul class="prs">
+    <li><a href="https://github.com/AvaloniaUI/Avalonia/pull/22466">Keep the tab strip reachable with Tab after focusing tab content</a></li>
+    <li><a href="https://github.com/AvaloniaUI/Avalonia/pull/22475">Lay out a RelativePanel chain when the panel has no width</a></li>
+    <li><a href="https://github.com/AvaloniaUI/Avalonia/pull/22229">Make Win32 BeginMoveDrag and BeginResizeDrag work with touch</a></li>
+    <li><a href="https://github.com/AvaloniaUI/Avalonia/pull/22489">Make the keyboard work inside a picker popup</a></li>
+    <li><a href="https://github.com/AvaloniaUI/Avalonia/pull/22429">Require the same button for both clicks of a double tap</a></li>
+    <li><a href="https://github.com/AvaloniaUI/Avalonia/pull/22356">Keep focus in the text box when an AutoCompleteBox item is picked</a></li>
+    <li><a href="https://github.com/AvaloniaUI/Avalonia/pull/22237">Read automation providers on the UI thread in Win32 automation</a></li>
+    <li><a href="https://github.com/AvaloniaUI/Avalonia/pull/22173">Allow casting to a nested type in a binding path</a></li>
+  </ul>
+  <p class="oss__all"><a href="https://github.com/AvaloniaUI/Avalonia/pulls?q=is%3Apr+author%3AEvan260+is%3Amerged">See all 32 on GitHub</a></p>
+</section>
+
+<section class="about" aria-labelledby="about-title">
+  <h2 id="about-title" class="section-title">Before all this</h2>
+  <div class="about__cols">
+    <p>From February to April 2026 I taught coding and robotics to kids aged 5 to 10 at Skill Samurai, and introduced 3D printing as something new they could try.</p>
+    <p>Before that, from 2021 to 2023, I worked retail: Costco, where I received an Outstanding Performance Award, then key holder at Bulk Barn, and Dollarama.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="contact" aria-labelledby="contact-title">
+  <h2 id="contact-title">If you're hiring, I'd like to hear about it.</h2>
+  <p class="contact__lines">
+    <a href="mailto:evandiplacido0348@gmail.com">evandiplacido0348@gmail.com</a>
+    <a href="tel:+16399940348">+1 639 994 0348</a>
+  </p>
+  <p class="contact__small">Saskatoon, Saskatchewan. Canadian citizen.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
