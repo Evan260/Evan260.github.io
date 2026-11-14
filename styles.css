@@ -213,7 +213,7 @@ p { margin: 0 0 1em; }
 .project__media { margin: 0; }
 .project__media--shot img { border-radius: 12px; box-shadow: 0 24px 50px -28px rgba(22, 32, 43, 0.5); }
 
-.project__media--games { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.project__media--games { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
 .phone { margin: 0; }
 .phone video {
   width: 100%;
